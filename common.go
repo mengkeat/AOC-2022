@@ -12,6 +12,10 @@ func Abs(x int) int {
 	return x
 }
 
+func Mod(a, b int) int {
+	return (a%b + b) % b
+}
+
 func Max(nums ...int) int {
 	max := nums[0]
 	for _, num := range nums {
@@ -31,6 +35,9 @@ func Min(nums ...int) int {
 	}
 	return min
 }
+
+var DirX = []int{1, 0, -1, 0}
+var DirY = []int{0, 1, 0, -1}
 
 var Neigh4 = [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 var Neigh8 = [][]int{
